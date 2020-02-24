@@ -49,6 +49,6 @@ export default class VersionPragmaFilter extends React.PureComponent {
       </div>
     }
 
-    return <div>{ this.props.children }</div>
+    return <div >{ this.props.children }</div>
   }
 }

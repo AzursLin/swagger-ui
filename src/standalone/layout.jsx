@@ -21,6 +21,7 @@ export default class StandaloneLayout extends React.Component {
     let Container = getComponent("Container")
     let Row = getComponent("Row")
     let Col = getComponent("Col")
+    let Zfbmenu = getComponent("Zfbmenu", true)
 
     const Topbar = getComponent("Topbar", true)
     const BaseLayout = getComponent("BaseLayout", true)
@@ -31,6 +32,7 @@ export default class StandaloneLayout extends React.Component {
 
       <Container className='swagger-ui'>
         {Topbar ? <Topbar /> : null}
+        <Zfbmenu ></Zfbmenu>
         <BaseLayout /> 
         <Row>
           <Col>
