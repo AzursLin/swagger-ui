@@ -52,7 +52,7 @@
     "@braintree/sanitize-url": "^3.0.0",
     "@kyleshockey/object-assign-deep": "^0.4.2",
     "@kyleshockey/xml": "^1.0.2",
-    "antd": "^3.26.9",
+    "antd": "^3.26.12",
     "base64-js": "^1.2.0",
     "classnames": "^2.2.6",
     "core-js": "^2.5.1",

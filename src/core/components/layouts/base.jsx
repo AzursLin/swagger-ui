@@ -85,7 +85,7 @@ export default class BaseLayout extends React.Component {
     const hasSecurityDefinitions = !!specSelectors.securityDefinitions()
 
     return (
-      <div className='swagger-ui'>
+      <div className='swagger-ui'style={{marginLeft:"310px"}}>
           <SvgAssets />
           <VersionPragmaFilter isSwagger2={isSwagger2} isOAS3={isOAS3} alsoShow={<Errors/>}>
             <Errors/>
@@ -104,9 +104,9 @@ export default class BaseLayout extends React.Component {
                 </Col>
               </div>
             ) : null}
-
+            
             <FilterContainer/>
-
+            
             <Row>
               <Col mobile={12} desktop={12} >
                 <Operations/>
