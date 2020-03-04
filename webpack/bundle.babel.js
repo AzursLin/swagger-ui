@@ -6,8 +6,8 @@ import configBuilder from "./_config-builder"
 
 const result = configBuilder(
   {
-    minimize: true,
-    mangle: true,
+    minimize: false,
+    mangle: false,
     sourcemaps: true,
     includeDependencies: true,
   },
@@ -17,6 +17,10 @@ const result = configBuilder(
         "./src/polyfills.js", // TODO: remove?
         "./src/core/index.js",
       ],
+    },
+    
+    performance: {
+      hints:false   
     },
 
     output: {

@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-key */
 import React from "react"
 import PropTypes from "prop-types"
-import { Button } from "antd"
-import { Row, Col } from 'antd'
-import { AutoComplete  } from 'antd';
+import { Button,AutoComplete } from "antd"
+import { Row, Col } from "antd"
 
 export default class Zfbmenu extends React.Component {
   constructor(props) {

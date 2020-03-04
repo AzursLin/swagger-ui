@@ -49,6 +49,38 @@ export default {
           },
         ],
       },
+      {
+        oneOf: [
+          // Process JS with Babel.
+          {
+            test: /\.(js|jsx|mjs)$/,
+            exclude: /node_modules/,
+            loader: require.resolve('babel-loader'),
+            options: {
+                plugins: [
+                    // 引入样式为 css
+                    // style为true 则默认引入less
+                    ['import', { libraryName: 'antd', style: 'css' }],
+                ]
+            }
+         }
+      ]
+    },
+     {//antd样式处理
+        test:/\.css$/,
+        exclude:/src/,
+        use:[
+          { loader: "style-loader",},
+          {
+            loader: "css-loader",
+            options:{
+            importLoaders:1
+          }
+          }
+          ]
+      },
+      { test: /\.(txt|yaml)$/, loader: "raw-loader" },
+      { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: "url-loader" },  
     ],
   },
 
